@@ -1,0 +1,15 @@
+[gd_scene format=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 473.0
+margin_bottom = 377.0
+
+[node name="TextEdit" type="TextEdit" parent="ColorRect"]
+margin_left = 75.0
+margin_top = 97.0
+margin_right = 283.0
+margin_bottom = 273.0
