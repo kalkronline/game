@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+
+[node name="Level" type="Spatial"]
+
+[node name="Floor" type="CSGBox" parent="."]
+use_collision = true
+width = 100.0
+height = 0.5
+depth = 100.0
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.785231, 0.619204, 0, -0.619204, 0.785231, 0, 37.4375, 13.514 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 18.0317, 0 )
+
+[node name="RemoteTransform" parent="Player" index="2"]
+transform = Transform( 1, 0, 0, 0, 0.78523, 0.619204, 0, -0.619204, 0.78523, 0, 19.4058, 13.514 )
+remote_path = NodePath("../../Camera")
+update_rotation = false
+update_scale = false
+
+[editable path="Player"]
