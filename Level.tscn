@@ -16,6 +16,9 @@ transform = Transform( 1, 0, 0, 0, 0.785231, 0.619204, 0, -0.619204, 0.785231, 0
 [node name="Player" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 18.0317, 0 )
 
+[node name="CollisionShape" parent="Player" index="1"]
+transform = Transform( 1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 3, 0 )
+
 [node name="RemoteTransform" parent="Player" index="2"]
 transform = Transform( 1, 0, 0, 0, 0.78523, 0.619204, 0, -0.619204, 0.78523, 0, 19.4058, 13.514 )
 remote_path = NodePath("../../Camera")
